@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-static const size_t MAXSTR=8;
+static const size_t MAXSTR=512;
 
 
 void string_reverse1(char * string) {
@@ -16,7 +16,6 @@ void string_reverse1(char * string) {
 
     while (head < tail) {
 
-        printf ("head: %p:%c\ntail: %p:%c\n",head,*head,tail,*tail);
         char tmp = *head;
         *head = *tail;
         *tail = tmp;
