@@ -7,6 +7,8 @@ static const size_t MAXSTR=512;
 
 void string_reverse1(char * string) {
 
+    // in place reverse of string.
+
     if ((string == NULL) || (strlen(string) >= MAXSTR)) {
         // should return error code.
         return;
