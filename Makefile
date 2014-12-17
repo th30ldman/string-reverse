@@ -1,8 +1,6 @@
 EXEC=strrev
 OBJS=strrev.o
 
-simsched: ${OBJS}
-
 default: ${EXEC}
 
 clean:
