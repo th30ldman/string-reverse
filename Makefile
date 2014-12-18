@@ -7,7 +7,7 @@ clean:
 	rm -f ${OBJS} ${EXEC}
 
 ${EXEC}: ${OBJS}
-	gcc -ggdb -o $@ $^
+	gcc -Wall -ggdb -o $@ $^
 
 %.o: %.c
-	gcc -ggdb -c $<
+	gcc -Wall -ggdb -c $<
